@@ -19,7 +19,7 @@ export class AuthService {
           if (user) {
             localStorage.setItem('token', user.token);
             this.decodeToken(user.token);
-            console.log(this.tokenItems);
+            // console.log(this.tokenItems);
           }
         })
       );
